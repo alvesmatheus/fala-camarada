@@ -1,0 +1,2 @@
+from collectors.spiders.committee_event import CommitteeEventSpider
+from collectors.spiders.committee_speech import CommitteeSpeechSpider
