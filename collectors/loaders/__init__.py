@@ -1,0 +1,2 @@
+from collectors.loaders.committee_event import CommitteeEventLoader
+from collectors.loaders.committee_speech import CommitteeSpeechLoader

@@ -1,0 +1,2 @@
+from collectors.items.committee_event import CommitteeEventItem
+from collectors.items.committee_speech import CommitteeSpeechItem
