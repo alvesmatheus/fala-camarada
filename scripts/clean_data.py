@@ -7,15 +7,30 @@ RAW_DATA_DIR_PATH = 'data/raw'
 READY_DATA_DIR_PATH = 'data/ready'
 
 RAW_COMMITTEE_SCHEDULE_PATH = 'data/raw/agenda_comissoes.csv'
-READY_COMMITTEE_SCHEDULE_PATH = 'data/ready/agenda_comissoes.csv'
+READY_COMMITTEE_SCHEDULE_PATH = 'data/ready/metadados_transcricoes.csv'
 
 TARGET_YEARS = [year for year in range(1995, 2021)]
 
 
 def fix_committee_schedule():
     raw_committee_schedule = pd.read_csv(RAW_COMMITTEE_SCHEDULE_PATH)
-
     committee_schedule = raw_committee_schedule.drop_duplicates('id_evento')
+
+    committee_schedule.replace(
+        'AP c/ Convidado',
+        'Audiência Pública com Convidado',
+        inplace=True)
+
+    committee_schedule.replace(
+        'AP c/ Ministro',
+        'Audiência Pública com Ministro',
+        inplace=True)
+
+    committee_schedule = committee_schedule.fillna({
+        'categoria_comissao': 'Outros',
+        'categoria_evento': 'Outros'
+    })
+
     committee_schedule.to_csv(READY_COMMITTEE_SCHEDULE_PATH, index=False)
 
 

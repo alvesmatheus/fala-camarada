@@ -7,6 +7,10 @@ USER_AGENT = 'Fala Camarada (github.com/alvesmatheus/fala-camarada)'
 
 COOKIES_ENABLED = False
 
+DNS_TIMEOUT = 180
+
+#LOG_LEVEL = 'WARNING'
+
 ROBOTSTXT_OBEY = True
 
 AUTOTHROTTLE_ENABLED = True
