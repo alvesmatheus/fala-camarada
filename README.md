@@ -31,8 +31,10 @@ Com a agenda de eventos das comissões já extraída, substitua a variável **`a
  $ scrapy crawl coletor-discursos-comissoes -o data/raw/discursos_comissoes_<ano>.csv -a year=<ano>
  ```
 
- **[Opcional]** Quando a extração dos discursos de comissões for concluída para todos os anos de seu interesse, execute o *script* de limpeza de dados disponibilizado. Os dados produzidos estarão disponíveis no diretório **`fala-camarada/data/ready/`**.
+**[Opcional]** Quando a extração dos discursos de comissões for concluída para todos os anos de seu interesse, execute o *script* de limpeza de dados disponibilizado. Os dados produzidos estarão disponíveis no diretório **`fala-camarada/data/ready/`**.
 
  ```sh
  $ python scripts/clean_data.py 
  ```
+
+**[Opcional]** O *script* `run-collectors.sh` pode ser utilizado para executar, sequencialmente, todos os coletores referentes ao período supracitado e, em seguida, a limpeza dos dados extraídos. 
