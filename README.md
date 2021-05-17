@@ -2,6 +2,10 @@
 
 Reunindo tudo o que se fala na Câmara dos Deputados.
 
+## Acesso aos dados
+
+Os dados extraídos através do Fala Camara estão disponíveis para *download* [aqui](https://bit.ly/transcricoes-comissoes).
+
 ## Como executar
 
 > :small_red_triangle_down: Esse tutorial assume que você possui a linguagem **[Python 3.0+](https://www.python.org/download/releases/3.0/)** instalada em sua máquina, bem como as bibliotecas **[Scrapy](https://scrapy.org/)**, **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)** e **[Pandas](https://pandas.pydata.org/)**.
