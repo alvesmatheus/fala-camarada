@@ -5,7 +5,7 @@ scrapy crawl coletor-eventos-comissoes -o data/raw/agenda_comissoes.csv
 echo -e "Agenda de comissões da Câmara dos Deputados extraída! \n"
 
 echo -e "Iniciando extração das transcrições de eventos da Câmara dos Deputados...\n"
-for ano in `seq 1995 2020`
+for ano in `seq 1995 2021`
   do
     echo "Extraindo transcrições de ${ano}..."
     scrapy crawl coletor-discursos-comissoes -o data/raw/discursos_comissoes_${ano}.csv -a year=${ano}

@@ -27,7 +27,7 @@ A seguir, antes de obter os discursos das comissões da Câmara dos Deputados, v
 $ scrapy crawl coletor-eventos-comissoes -o data/raw/agenda_comissoes.csv
 ```
 
-Com a agenda de eventos das comissões já extraída, substitua a variável **`ano`** no comando abaixo por um valor entre **`1995`** e **`2020`** (inclusos) e execute-o. Os dados extraídos estarão disponíveis no diretório **`fala-camarada/data/raw/`**.
+Com a agenda de eventos das comissões já extraída, substitua a variável **`ano`** no comando abaixo por um valor entre **`1995`** e **`2021`** (inclusos) e execute-o. Os dados extraídos estarão disponíveis no diretório **`fala-camarada/data/raw/`**.
 
 > ###### :heavy_exclamation_mark: Alterações no código-fonte podem ser necessárias para extração de discursos de outros anos.
 
